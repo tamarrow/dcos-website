@@ -15,7 +15,7 @@ If you're unfamiliar with GitLab, it's an open source developer tool that allows
 
 Using GitLab on DC/OS now allows you to co-locate all of the tools you need for developers on one easy to manage cluster. Just as with any Universe package, you can robustly install several side by side instances of GitLab to provide segregated instances for each of your development teams. Alternatively, you can just as easily install GitLab in a highly available configuration that many teams use concurrently.
 
-In this post, we'll run through a quickstart installation of GitLab to show how straightfoward it is to set up an end to end continuous delivery pipeline using GitLab to host both your code and Docker images, and Jenkins to run a job that builds a Docker image on DC/OS and deploys it to Marathon.
+In this post, we'll run through a quickstart installation of GitLab to show how straightforward it is to set up an end to end continuous delivery pipeline using GitLab to host both your code and Docker images, and Jenkins to run a job that builds a Docker image on DC/OS and deploys it to Marathon.
 
 <img src="/assets/images/blog/2016-09-16-gitlab/gitlab-cd.png" alt="Continuous Delivery with GitLab" /> *Continuous Delivery with GitLab*
 
@@ -79,7 +79,7 @@ The instructions below use a pinned hostname constraint to success the applicati
 
     nano Dockerfile
 
-1. Paste in the following contents, which will extend the officia Nginx container and add our index.html file to it:
+1. Paste in the following contents, which will extend the official Nginx container and add our index.html file to it:
 
     FROM nginx
     COPY index.html /usr/share/nginx/html/index.html
